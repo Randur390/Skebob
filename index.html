@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>Задание 1</TITLE>
+</HEAD>
+<BODY>
+
+<H1>Задание 1</H1>
+
+<H2>Маркированный список</H2>
+
+<UL>
+  <LI>1. <A HREF="http://kubsu.ru/">Абсолютная ссылка на kubsu.ru</A></LI>
+  <LI>2. <A HREF="https://kubsu.ru/">Абсолютная ссылка на kubsu.ru HTTPS</A></LI>
+  <LI>3. Ссылка-изображение: <A HREF="https://kubsu.ru/"><IMG SRC="image.jpg" ALT="КубГУ"></A></LI>
+  <LI>4. <A HREF="/page.html">Сокращенная ссылка на внутреннюю страницу</A></LI>
+  <LI>5. <A HREF="/">Сокращенная ссылка на главную</A></LI>
+  <LI>6. <A HREF="#fragment">Ссылка на фрагмент страницы</A></LI>
+  <LI>7. <A HREF="https://kubsu.ru/?param1=1&param2=2&param3=3">Ссылка с тремя параметрами</A></LI>
+  <LI>8. <A HREF="https://kubsu.ru/page?id=123">Ссылка с параметром id</A></LI>
+  <LI>9. <A HREF="page.html">Относительная в текущем каталоге</A></LI>
+  <LI>10. <A HREF="about/page.html">Относительная в каталоге about</A></LI>
+  <LI>11. <A HREF="../page.html">Относительная уровнем выше</A></LI>
+  <LI>12. <A HREF="../../page.html">Относительная двумя уровнями выше</A></LI>
+  <LI>13. Это текст с <A HREF="https://kubsu.ru/">контекстной ссылкой</A> внутри</LI>
+  <LI>14. <A HREF="https://example.com/page#section">Ссылка на фрагмент внешнего сайта</A></LI>
+  <LI>16. <A HREF="">Ссылка с пустым href</A></LI>
+  <LI>17. <A>Ссылка без href</A></LI>
+  <LI>18. <A HREF="https://kubsu.ru/" REL="nofollow">Ссылка с запретом перехода</A></LI>
+  <LI>19. <A HREF="https://kubsu.ru/" REL="noindex">Ссылка с запретом индексации</A></LI>
+  <LI>21. <A HREF="ftp://user:password@ftp.example.com/file.txt">FTP ссылка с авторизацией</A></LI>
+</UL>
+
+<H2>15. Ссылки из областей картинки</H2>
+<IMG SRC="image.jpg" ALT="Пример" USEMAP="#map">
+<MAP NAME="map">
+  <AREA SHAPE="rect" COORDS="0,0,100,100" HREF="https://kubsu.ru/ru" ALT="Прямоугольная область">
+  <AREA SHAPE="circle" COORDS="150,150,50" HREF="https://kubsu.ru/en" ALT="Круглая область">
+</MAP>
+
+<H2>20. Нумерованный список ссылок с title</H2>
+<OL>
+  <LI><A HREF="https://kubsu.ru/" TITLE="Официальный сайт">КубГУ</A></LI>
+  <LI><A HREF="https://kubsu.ru/ru/faculties" TITLE="Факультеты">Факультеты</A></LI>
+  <LI><A HREF="https://kubsu.ru/ru/abitur" TITLE="Абитуриентам">Абитуриентам</A></LI>
+</OL>
+
+<H2>Форма</H2>
+<FORM ACTION="/submit" METHOD="post">
+  ФИО: <INPUT TYPE="text" NAME="fio"><BR>
+  Телефон: <INPUT TYPE="tel" NAME="phone"><BR>
+  E-mail: <INPUT TYPE="email" NAME="email"><BR>
+  Дата рождения: <INPUT TYPE="date" NAME="birthdate"><BR>
+  Пол: 
+  <INPUT TYPE="radio" NAME="gender" VALUE="male"> Мужской
+  <INPUT TYPE="radio" NAME="gender" VALUE="female"> Женский<BR>
+  Любимый язык программирования:<BR>
+  <SELECT NAME="languages" MULTIPLE>
+    <OPTION VALUE="pascal">Pascal</OPTION>
+    <OPTION VALUE="c">C</OPTION>
+    <OPTION VALUE="cpp">C++</OPTION>
+    <OPTION VALUE="javascript">JavaScript</OPTION>
+    <OPTION VALUE="php">PHP</OPTION>
+    <OPTION VALUE="python">Python</OPTION>
+    <OPTION VALUE="java">Java</OPTION>
+    <OPTION VALUE="haskell">Haskel</OPTION>
+    <OPTION VALUE="clojure">Clojure</OPTION>
+    <OPTION VALUE="prolog">Prolog</OPTION>
+    <OPTION VALUE="scala">Scala</OPTION>
+  </SELECT><BR>
+  Биография:<BR>
+  <TEXTAREA NAME="bio"></TEXTAREA><BR>
+  <INPUT TYPE="checkbox" NAME="agreement"> С контрактом ознакомлен(а)<BR>
+  <INPUT TYPE="submit" VALUE="Сохранить">
+</FORM>
+
+</BODY>
+</HTML>
